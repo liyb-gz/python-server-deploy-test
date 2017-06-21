@@ -39,7 +39,7 @@ class TheServer(BaseHTTPRequestHandler):
 			self.send_header("Content-Type", "text/html")
 			self.end_headers()
 			self.wfile.write(self.make_HTML().encode())
-		elif self.addressbook[self.path[1:]] is not None:
+		elif self.path[1:] in self.addressbook:
 			self.send_response(303)
 			self.send_header("Location", self.addressbook[self.path[1:]])
 			self.end_headers()
