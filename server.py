@@ -18,7 +18,7 @@ class TheServer(BaseHTTPRequestHandler):
 	<link rel="stylesheet" href="" >
 </head>
 <body>
-	<form action="http://localhost:8000/" method="post">
+	<form action="/" method="post">
 		<!-- <input type="text" name="q"> -->
 		<input type="text" name="s" placeholder="Short code">
 		<input type="text" name="l" placeholder="Long address">
